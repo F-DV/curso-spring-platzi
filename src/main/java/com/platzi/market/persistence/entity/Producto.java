@@ -1,6 +1,9 @@
 package com.platzi.market.persistence.entity;
 
+import org.springframework.format.number.money.MonetaryAmountFormatter;
+
 import javax.persistence.*;
+import java.math.BigDecimal;
 
 @Entity
 @Table(name = "productos")
@@ -25,7 +28,7 @@ public class Producto {
     @Column(name = "cantidad_stock")
     private Integer cantidadStock;
 
-    private boolean estado;
+    private Boolean estado;
 
     public Long getIdProducto() {
         return idProducto;
@@ -75,11 +78,11 @@ public class Producto {
         this.cantidadStock = cantidadStock;
     }
 
-    public boolean isEstado() {
+    public Boolean isEstado() {
         return estado;
     }
 
-    public void setEstado(boolean estado) {
+    public void setEstado(Boolean estado) {
         this.estado = estado;
     }
 }
