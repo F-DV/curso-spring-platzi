@@ -2,6 +2,8 @@
 
 - En el curso se creara un proyecto para gestionar todos los productos de un supermercado
 - Utilizara el gestor de dependencias Gradle
+- Proyecto tendra una arquitectura por capas orientado al dominio
+
 
 # Configuracion Spring
 - podemos Varios perfiles de Spring , el path de entrada, etc desde el archivo application.properties
