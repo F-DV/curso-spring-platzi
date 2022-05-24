@@ -23,7 +23,7 @@ public class ProductService {
         return productRepository.getProduct(productId);
     }
 
-    Optional<List<Product>> getByCategory(long categoryId){
+    public Optional<List<Product>> getByCategory(long categoryId){
         return productRepository.getByCategory(categoryId);
     }
 
